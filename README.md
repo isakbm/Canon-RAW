@@ -5,7 +5,9 @@
 
 ![Brother](https://i.imgur.com/dyRIIxN.png)
 
-The above picture was made by taking the raw .CR2 file, producing the difference values, and summing them up. The image that one gets from this has glitches in it for unknown reasons (this project is still not completed). Colors and contrast were added and adjusted in Gimp.
+The above picture was made by taking the raw .CR2 file, producing the difference values, and summing them up. The image that one gets from this has glitches in it for unknown reasons (this project is still not completed). Colors and contrast were added and adjusted in Gimp. 
+
+The patched glitches can be explained by moire patterns due to nearest linear interpolation and the lack of demosaicing. On the other hand the horizontal lines are really artifacts that have unknown origin, but are related to possible subtle errors or bugs in the decoding. They go horizontally since that is the direction along which one integrates (or accumulates) the difference values.
 
 The console application takes two arguments.
 
