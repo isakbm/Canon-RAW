@@ -116,7 +116,7 @@ typedef struct DHT_HEADER
 
 typedef struct SOF3_HEADER {
     uint16_t marker, length; 
-       uint8_t  sampleP;
+    uint8_t  sampleP;
     uint16_t num_lines, samp_per_lin;
     uint8_t  comp_per_frame;
     uint8_t  sFactors[12];
